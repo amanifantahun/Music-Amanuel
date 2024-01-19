@@ -1,0 +1,134 @@
+.header {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+background-color: #531010;
+color: #0f0f0f3f;
+}
+
+#logo {
+width: 90px;
+height: auto;
+margin-right: 80px;
+}
+
+#title {
+margin: 0;
+font-size: 1rem;
+}
+
+/* Add some basic styling for the modal */
+#song-modal.modal {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(206, 13, 13, 0.075);
+}
+
+.modal-content {
+    background-color: #221f1f;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the container for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style the individual cards */
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 7px;
+    border: 1px solid #2924244f;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.card-artist {
+    margin: 0 10px 10px;
+    font-size: 1rem;
+    color: #490b0b62;
+}
+/* Making the Pop Up  */
+.box{
+    background-color: rgb(163, 147, 147);
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(5, 4, 4, 0.5);
+    position: fixed;
+    padding: 10px 20px;
+}
+.close{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: block;
+    height: 20px;
+    width: 20px;
+    z-index: 1000;
+}
+.popupImage{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.hidden{
+    display: none;
+}
